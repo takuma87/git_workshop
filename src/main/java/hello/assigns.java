@@ -1,11 +1,10 @@
 package hello;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class assigns {
-    ArrayList<assign> assigns = new ArrayList<>();
+    private ArrayList<assign> assigns = new ArrayList<>();
 
     void addassign(assign as){
         assigns.add(as);
@@ -22,15 +21,16 @@ public class assigns {
     void sortassign(char m){
         if(m=='d'){
             //sort by date
-            //Collections.sort(assigns);
+            assigns.sort(Comparator.comparing(assign::getDate));
 
         }
         if(m=='p'){
             //sort by priority
-
+            assigns.sort(Comparator.comparing(assign::getPriority) );
         }
         if(m=='n'){
             //sort by name
+            assigns.sort(Comparator.comparing(assign::getName) );
         }
     }
 

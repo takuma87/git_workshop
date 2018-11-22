@@ -1,11 +1,9 @@
 package hello;
 
-import java.util.Date;
-
 public class assign {
-    String name;
-    String date;
-    int priority;
+    private String name;
+    private String date;
+    private int priority;
 
     void Setassign(String name, String date, int priority){
         this.name = name;
