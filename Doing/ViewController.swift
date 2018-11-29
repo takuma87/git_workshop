@@ -49,12 +49,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return [deleteButton]
     }
  
-    /*
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCell.EditingStyle, forRowAtIndexPathindexPath: NSIndexPath){
-        Todokobetsunonakami[IndexPath.section].sectionObject.removeAtIndex(IndexPath.row)
-        tableView.deleteRowsAtIndexPaths([IndexPath], withRowAnimation: UITableView.RowAnimation.Fade)
-    }
- */
+    
 }
 
 
